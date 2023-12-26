@@ -11,6 +11,7 @@
 		DD614FD42B3AF5B5006913FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD614FD32B3AF5B5006913FD /* ContentView.swift */; };
 		DD614FD62B3AF5B6006913FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD614FD52B3AF5B6006913FD /* Assets.xcassets */; };
 		DD614FD92B3AF5B6006913FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD614FD82B3AF5B6006913FD /* Preview Assets.xcassets */; };
+		DD614FE12B3AF5E6006913FD /* ThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD614FE02B3AF5E6006913FD /* ThemeSwitcherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DD614FD32B3AF5B5006913FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD614FD52B3AF5B6006913FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD614FD82B3AF5B6006913FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD614FE02B3AF5E6006913FD /* ThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		DD614FD02B3AF5B5006913FD /* AppThemeSwitcherAntila */ = {
 			isa = PBXGroup;
 			children = (
+				DD614FDF2B3AF5D5006913FD /* Views */,
 				DD614FD12B3AF5B5006913FD /* AppThemeSwitcherAntilaApp.swift */,
 				DD614FD32B3AF5B5006913FD /* ContentView.swift */,
 				DD614FD52B3AF5B6006913FD /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				DD614FD82B3AF5B6006913FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD614FDF2B3AF5D5006913FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD614FE02B3AF5E6006913FD /* ThemeSwitcherView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD614FD42B3AF5B5006913FD /* ContentView.swift in Sources */,
+				DD614FE12B3AF5E6006913FD /* ThemeSwitcherView.swift in Sources */,
 				DD614FD22B3AF5B5006913FD /* AppThemeSwitcherAntilaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

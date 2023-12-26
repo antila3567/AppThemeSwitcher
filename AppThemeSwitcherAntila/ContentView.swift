@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var changeTheme: Bool = false
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
+    @Environment(\.colorScheme) private var scheme
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Section("Appearance") {
+                    Button("Change theme") {
+                        changeTheme.toggle()
+                    }
+                }
+            }
+            .navigationTitle("Settings")
         }
-        .padding()
+        .preferredColorScheme(userTheme.colorScheme)
+        .sheet(isPresented: $changeTheme, content: {
+            ThemeSwitcherView(scheme: scheme)
+                .presentationDetents([.height(410)])
+                .presentationBackground(.clear)
+        })
     }
 }
 
